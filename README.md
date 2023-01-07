@@ -1,6 +1,6 @@
 # Boas vindas ao repositório do desafio PortLouis
 
-Esse projeto foi desenvolvido para uma vaga de frontend na empresa [Port Louis](portdata.tech)
+Esse projeto foi desenvolvido para uma vaga de backend na empresa [Port Louis](portdata.tech)
 
  Sumário
 - [Contexto](#contexto)

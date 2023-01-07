@@ -57,7 +57,12 @@ Clonando o repositorio
 ```bash
   git@github.com:Raph2ll/PortLouis.git
 ```
+
 Entre no diretório criado
+```bash
+  cd PortLouis
+```
+
 Instale as dependencias e rode o script
 // Entre no localhost
 ```bash

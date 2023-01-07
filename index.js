@@ -140,7 +140,7 @@ const isPending = (notas, pedidos) => {
 
         itensPendentes.push(item);
       } else if (quantidadeAtendida > item.quantidade_produto) {
-        throw new Error(`A quantidade atendida para o item ${item.número_item} do pedido ${pedido} é maior que a quantidade do item no pedido`);
+        throw new Error(`The quantity fulfilled for the item ${item.número_item} of the order ${pedido} is greater than the quantity of the item in the order`);
       }
     }
 

@@ -64,7 +64,6 @@ Entre no diretório criado
 ```
 
 Instale as dependencias e rode o script
-// Entre no localhost
 ```bash
   npm i && npm start
 ```

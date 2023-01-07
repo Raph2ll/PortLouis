@@ -6,8 +6,6 @@ Esse projeto foi desenvolvido para uma vaga de backend na empresa [Port Louis](p
 - [Contexto](#contexto)
 - [Instruções](#instruções)
 - [Stack utilizada](#Stack-utilizadas)
-- [Screenshots](#Screenshots)
-- [Próximos passos](#Próximos-passos)
 
 # Contexto
 

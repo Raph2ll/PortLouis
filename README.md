@@ -63,7 +63,12 @@ Entre no diretório criado
 
 Instale as dependencias e rode o script
 ```bash
-  npm i && npm start
+  npm i && npm run build
+```
+
+RResolve o exercício 
+```bash
+  npm start
 ```
 
 ## Stack utilizada

@@ -66,7 +66,7 @@ Instale as dependencias e rode o script
   npm i && npm run build
 ```
 
-RResolve o exercício 
+Resolve o exercício 
 ```bash
   npm start
 ```

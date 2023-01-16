@@ -1,8 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-
-let dataPedidos = fs.readFileSync(`allPedidos.json`).toString('utf-8').replace(/^\uFEFF/, '');
-let dataNotas = fs.readFileSync(`allNotas.json`).toString('utf-8').replace(/^\uFEFF/, '');
+let dataPedidos;
+let dataNotas;
 
 // Pedidos
 
@@ -71,9 +70,6 @@ Notas()
 
 // Cruzamento de pedidos e notas
 
-let parsePedidos = JSON.parse(dataPedidos)
-let parseNotas = JSON.parse(dataNotas)
-
 const validateInput = (notas, pedidos) => {
   for (const nota of Object.values(notas)) {
     for (const item of nota) {
@@ -101,6 +97,11 @@ const validateInput = (notas, pedidos) => {
 }
 
 try {
+  let dataPedidos = fs.readFileSync(`allPedidos.json`).toString('utf-8').replace(/^\uFEFF/, '');
+  let dataNotas = fs.readFileSync(`allNotas.json`).toString('utf-8').replace(/^\uFEFF/, '');
+
+  let parsePedidos = JSON.parse(dataPedidos)
+  let parseNotas = JSON.parse(dataNotas)
   validateInput(parseNotas, parsePedidos);
   console.log('O pedidos e as notas são validos');
 } catch (error) {
@@ -152,4 +153,14 @@ const isPending = (notas, pedidos) => {
   return pedidosPendentes
 }
 
-isPending(parseNotas, parsePedidos)
+try {
+  let dataPedidos = fs.readFileSync(`allPedidos.json`).toString('utf-8').replace(/^\uFEFF/, '');
+  let dataNotas = fs.readFileSync(`allNotas.json`).toString('utf-8').replace(/^\uFEFF/, '');
+
+  let parsePedidos = JSON.parse(dataPedidos)
+  let parseNotas = JSON.parse(dataNotas)
+  isPending(parseNotas, parsePedidos)
+  console.log('Pedidos pendentes');
+} catch (error) {
+  console.error(error.message);
+}

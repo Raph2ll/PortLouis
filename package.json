@@ -4,6 +4,7 @@
   "description": "Programa cuja execução cruza pedidos e notas",
   "main": "index.js",
   "scripts": {
+    "build": "node buildIndex.js",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
